@@ -6,6 +6,7 @@ Bike Share Data Analysis
 
 ### Description
 This project is created to analysis the data in three cities (Chicago,New York, and Washington).
+We used this data to extract information about users habits, working times, and the most busy days.
 
 
 ### Files used
