@@ -200,18 +200,23 @@ def view_data(df):
 
 
 def main():
-    while True:
-        city, month, day = get_filters()
-        df = load_data(city, month, day)
-        view_data(df)
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
-        user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            break
+    try:
+        while True:
+            city, month, day = get_filters()
+            df = load_data(city, month, day)
+            view_data(df)
+            time_stats(df)
+            station_stats(df)
+            trip_duration_stats(df)
+            user_stats(df)
+
+            restart = input('\nWould you like to restart? Enter yes or no.\n')
+            if restart.lower() != 'yes':
+                break
+    except:
+        pass
+
 
 
 if __name__ == "__main__":
