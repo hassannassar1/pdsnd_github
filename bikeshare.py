@@ -2,6 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
+print("Starting the Project....")
+print("this part is used in the third Project of the course....")
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
